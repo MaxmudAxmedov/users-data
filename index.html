@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>users</title>
+</head>
+<body>
+    <button class="fs">F-Z</button>
+   <ul class="font-size">
+       <li class="fz-default">default</li>
+       <li class="fz-1">font-size: 15px</li>
+       <li class="fz-2">font-size: 17px</li>
+       <li class="fz-3">font-size: 19px</li>
+       <li class="fz-4">font-size: 21px</li>
+       <li class="fz-5">font-size: 23px</li>
+   </ul>
+
+    <div class="container">
+        <ul class="list">
+            <li class="item item-one">
+                <ul class="user-list"></ul>
+            </li>
+            <li class="item item-two">
+                <ul class="user-post"></ul>
+                
+            </li>
+            <li class="item-loader">
+                <img class="spinner" src="./img/Vanilla-1s-280px.svg" alt="">
+            </li>
+            <li class="item">
+                <ul class="user-commit"></ul>
+            </li>
+      
+           
+        </ul>
+    </div>
+
+    <template class="user-template">
+        <li class="user-item">
+            <h2 class="user-userName">Bret</h2>
+            <p class="user-id">1</p>
+            <p class="user-name">Leanne Graham</p>
+            <address class="user-address">
+                <div class="address">
+                    <span class="address-name"><b>street: </b> <i class="street">Kulas Light</i></span> 
+                    <span class="address-name"><b>suite: </b> <i class="suite">Apt. 556</i></span> 
+                    <span class="address-name"><b>city: </b> <i class="city">Gwenborough</i></span>  
+                    <span class="address-name"><b>zipcode: </b> <i class="zipcode">92998-3874</i></span> 
+                </div>
+                <a class="user-geoLocation-link" href="https://www.google.com/maps/place/-37.3159,81.1496" target="_blank">-37.3159,81.1496
+                </a>
+                <img class="img-location" src="./img/map.png" alt="icon location">
+            </address>
+            <div class="user-company">
+                <h3 class="user-companyName">Romaguera-Crona</h3>
+                <p class="user-info">Multi-layered client-server neural-net</p>
+                <p class="user-text">harness real-time e-markets</p>
+            </div>
+            <div class="user-link-box">
+                <a class="user-tel" href="tel:1-770-736-8031 x56442"> +1-770-736-8031 x56442</a>
+                <a class="user-webSite" href="http://hildegard.org">Website: hildegard.org</a>
+                <a class="user-email" href="mailto:Sincere@april.biz">Email: Sincere@april.biz</a>
+            </div>
+        </li>
+    </template>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

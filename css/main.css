@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+
+    background: rgb(0,212,255);
+    background-image: url('../img/1612919006_121-p-rubinovii-fon-150.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    color: rgb(47, 47, 255);
+}
+a:hover{
+    border-bottom: 2px solid rgb(18, 2, 163);
+    color: rgb(18, 2, 163);
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.item{
+    width: 33%;
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+.item:nth-child(1){
+    border: 2px solid #ffffff;
+}
+.item:nth-child(2){
+    border: 2px solid #d98b03;
+}
+.item-one{
+    height: 100vh;
+    overflow-y: scroll;
+    display: block;
+}
+.item-one::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ffffff;
+}
+
+.item-one::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px 4px #ccc;
+}
+
+.item-one::-webkit-scrollbar-thumb {
+    background-color: #d98b03;
+}
+.user-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+.user-item{
+    position: relative;
+    background-color: rgb(203, 203, 203);
+    margin: 6px 0;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.user-userName{
+    color: rgb(238, 255, 0);
+    font-size: 25px;
+    padding: 20px;
+    background-color: rgb(111, 111, 111);
+    border-radius: 8px;
+    margin: 0;
+    box-shadow: inset 0 0 5px 2px #ccc;
+}
+.user-id{
+    position: absolute;
+    top: 25px;
+    right: 18px;
+    font-size: 35px;
+    margin: 0;
+    color: #d98b03;
+    font-weight: 900;
+}
+.user-name{
+    display: block;
+    color: rgb(9, 109, 4);
+    padding: 8px 0 0 0;
+    font-size: 22px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    
+
+}
+.user-address{
+    width: 90%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+.address{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.address-name{
+    display: inline;
+}
+.user-geoLocation-link{
+    text-decoration: none;
+}
+
+.img-location{
+    width: 20px;
+    position: absolute;
+    top: 160px;
+    right: 195px;
+}
+.user-company{
+    margin: 18px 0; 
+}
+.user-companyName{
+    margin: 0;
+    
+}
+.user-info{
+    padding: 0;
+    margin: 0;
+}
+.user-text{
+    padding: 0;
+    margin: 0;
+}
+
+.user-link-box{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e5e5e5;
+    padding: 16px 5px;
+    box-shadow: inset 0 0 16px 2px rgb(163, 163, 163);
+
+}
+
+/* post */
+.user-post{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.item-two{
+    height: 100vh;
+    overflow-y: scroll;
+    display: none;
+}
+
+.item-two::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ffffff;
+}
+
+.item-two::-webkit-scrollbar-track {
+    box-shadow: 0 0 5px 4px #ccc;
+}
+
+.item-two::-webkit-scrollbar-thumb {
+    background-color: #d98b03;
+}
+.post-item{
+    background-color: #d98b03;
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 12px;
+    position: relative;
+}
+.post-item::before{
+    content: '';
+    position: absolute;
+    left: -12px;
+    bottom: 0;
+    width: 40px;
+    height: 35px;
+    clip-path: polygon(25% 85%, 48% 53%, 51% 100%, 0 100%);
+    background-color: #d98b03;
+}
+.post-title{
+    margin: 0;
+    text-align: center;
+}
+.post-text{
+    text-align: justify;
+    padding: 0 10px;   
+    color: rgb(147, 0, 0); 
+}
+/* commit */
+
+.user-commit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.commit-item{
+    background-color: #d98b03;
+    border-radius: 8px;
+    margin: 6px 0;
+    padding: 12px;
+    position: relative;
+}
+.commit-item::before{
+    content: '';
+    position: absolute;
+    left: -12px;
+    bottom: 0;
+    width: 40px;
+    height: 35px;
+    clip-path: polygon(25% 85%, 48% 53%, 51% 100%, 0 100%);
+    background-color: #d98b03;
+}
+.commit-title{
+    text-align: center;
+}
+.commit-text{
+    text-align: justify;
+    padding: 0 10px;
+    color: rgb(147, 0, 0);  
+}
+.commit-email{
+    width: max-content;
+    display: block;
+    margin-left: auto;
+}
+
+.spinner{
+    position: absolute;
+    top: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 100;
+}
+.fs{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px;
+    background-color: teal;
+    color: #ffffff;
+    border: none;
+    z-index: 1;
+}
+
+.font-size{
+    width: 180px;
+    margin: 0;
+    padding: 12px;
+    list-style-type: none;
+    height: auto;
+    background-color: #cfcfcf;
+    position: absolute;
+    top: 50px;
+    right: -200px;
+    z-index: 1;
+    color: #ccc;
+    font-size: 18px;
+    line-height: 25px;
+    transition: all 0.5s ease-in-out;
+    border-radius: 6px
+    ;
+}
+.show{
+    right: 10px;
+}
